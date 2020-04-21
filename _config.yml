@@ -2,25 +2,25 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://yadongq.tech
 date_format: "ordinal"
 title: 码志
-subtitle: "公众号：闷骚的程序员"
-description: "马壮的个人博客，公众号：闷骚的程序员"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang, 闷骚的程序员
-timezone: Asia/Shanghai
+# subtitle: "公众号：闷骚的程序员"
+description: "个人技术博客"
+keywords: 记录，学习，进步
+#timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Zhuang Ma
+author: yadongq
 organization: 
 organization_url: 
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: dongyaQin
+location: Beijing, China
+email: qydsdu@163.com
 
 # ---------------- #
 #    Navigation    #
@@ -85,7 +85,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: dongyaQin/dongyaQin.github.io
 
 # ---------------- #
 #      Comments    #
