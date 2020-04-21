@@ -2,13 +2,13 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://yadongq.tech
+url: https://dongyaqin.github.io
 date_format: "ordinal"
-title: 码志
-# subtitle: "公众号：闷骚的程序员"
+title: Study
+subtitle: "好好学习，天天向上"
 description: "个人技术博客"
 keywords: 记录，学习，进步
-#timezone: Asia/Shanghai
+timezone: Asia/Beijing
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
