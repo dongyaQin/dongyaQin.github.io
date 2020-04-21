@@ -1,1 +1,1 @@
-个人博客：<https://yadongq.tech>
+个人博客：<https://dongyaqin.github.io>
