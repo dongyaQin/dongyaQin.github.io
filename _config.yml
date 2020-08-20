@@ -91,7 +91,7 @@ repository: dongyaQin/dongyaQin.github.io
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk
-# comments_provider: gitalk
+comments_provider: gitalk
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
@@ -105,11 +105,11 @@ repository: dongyaQin/dongyaQin.github.io
 #         client_id: d2e1cbbd298958076462
 #         client_secret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
 # https://github.com/gitalk/gitalk#install
-# gitalk:
-#     owner: mzlogin
-#     repo: blog-comments
-#     clientID: d2e1cbbd298958076462
-#     clientSecret: b42a4178e5fd4a7cf63189ef4b1453b05c375709
+gitalk:
+    owner: dongyaQin
+    repo: blog-comments
+    clientID: 84a16f096879b2c42733
+    clientSecret: ccb83e8d3fd4906711402f9a47a841f680adc15c
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
