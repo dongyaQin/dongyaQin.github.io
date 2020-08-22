@@ -5,7 +5,7 @@ baseurl:
 url: https://dongyaqin.github.io
 date_format: "ordinal"
 title: Study
-subtitle: "好好学习，天天向上"
+subtitle: "学而时习之"
 description: "个人技术博客"
 keywords: 记录，学习，进步
 timezone: Asia/Beijing
@@ -42,9 +42,9 @@ navs:
 #     href: /open-source/
 #     label: 开源
 
-  -
-    href: /wiki/
-    label: 维基
+  # -
+    # href: /wiki/
+    # label: 维基
 
   -
     href: /links/
