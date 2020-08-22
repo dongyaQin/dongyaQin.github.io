@@ -8,11 +8,12 @@ keywords: Java, RocketMQ, 消息发送
 # 消息发送解析
 
 Rocketmq源码中，在example模块下有很多例子，其中quickstart中有最简单的发送消息和消费消息的过程，我们以quickstart中的消息发送为例简单分析一下消息发送的过程
-![](/images/posts/rocketmq/project-structure.png)
+
+<img src="/images/posts/rocketmq/project-structure.png" width = "300" height = "500" align=center />
 
 ## 类图
 与producer相关的逻辑在client模块下，实际上对于producer和consumer的逻辑都在client模块下。
-![](/images/posts/rocketmq/client-producer.png)
+<img src="/images/posts/rocketmq/client-producer.png" width = "500" height = "400" align=center />
 
 
 ## 使用
