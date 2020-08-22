@@ -7,11 +7,43 @@ keywords: Java, RocketMQ, 消息发送
 ---
 # 消息发送解析
 
-Rocketmq源码中，在example模块下有很多例子，我们以一个消息发送具体的例子来开始解析消息发送过程
+Rocketmq源码中，在example模块下有很多例子，其中quickstart中有最简单的发送消息和消费消息的过程，我们以quickstart中的消息发送为例简单分析一下消息发送的过程
+![](/images/posts/rocketmq/project-structure.png)
 
-## 基本结构
+## 类图
+与producer相关的逻辑在client模块下，实际上对于producer和consumer的逻辑都在client模块下。
+![](/images/posts/rocketmq/client-producer.png)
 
-网络模块在包*remoting*中，5000多行代码，为rocketmq各个组件之间的网络通信提供基本功能
 
-从接口层面，client和server的相关的类最终会分别实现RemotingClient和RemotingServer接口
-![](/images/posts/rocketmq/remotting-interface.png)
+## 使用
+
+删掉部分冗余代码之后，客户端发送消息逻辑如下
+
+```
+        // new一个producer对象，指定producer group
+        DefaultMQProducer producer = new DefaultMQProducer("please_rename_unique_group_name");
+        // 首先调用start()
+        producer.start();
+
+        // 循环发送1000条消息
+        for (int i = 0; i < 1000; i++) {
+            try {
+                Message msg = new Message("TopicTest" /* Topic */,
+                    "TagA" /* Tag */,
+                    ("Hello RocketMQ " + i).getBytes(RemotingHelper.DEFAULT_CHARSET) /* Message body */
+                );
+                // 调用发消息逻辑
+                SendResult sendResult = producer.send(msg);
+                System.out.printf("%s%n", sendResult);
+            } catch (Exception e) {
+                e.printStackTrace();
+                Thread.sleep(1000);
+            }
+        }
+        // 使用完之后，调用shutdown
+        producer.shutdown();
+```
+
+
+
+## 剖析
