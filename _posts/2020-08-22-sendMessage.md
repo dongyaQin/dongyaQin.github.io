@@ -10,7 +10,9 @@ keywords: Java, RocketMQ, 消息发送
 
 ## 类图
 与producer相关的逻辑在client模块下。在rocketmq里，相对于broker和nameserver，对于producer和consumer都是client。
-<img src="/images/posts/rocketmq/client-producer.png" width = "500" height = "400" align="middle" />
+
+
+<img src="/images/posts/rocketmq/client-producer.png" width = "500" height = "400"/>
 
 
 ### ClientConfig
